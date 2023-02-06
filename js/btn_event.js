@@ -16,7 +16,7 @@ $('#passbtn').click(function(){
         //     "display":"block",
         //     "top": "85%"
         // });
-        $('#passbtn').html('결제해서 보기');
+        $('#passbtn').html('지금 바로 확인하기!');
         $('.jb-text').css('display','none');
         //$('#passbtn1').prop('value',"GGG");
         
