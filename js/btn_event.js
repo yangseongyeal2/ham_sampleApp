@@ -6,7 +6,12 @@ $('#passbtn').click(function(){
         //첫번쨰 페이지 기능
         console.log('page::' + page);
         // id image 변경
-        $('#customimg').attr("src", "assets/img/test2.png");    
+        var urlstr = window.location.href;
+        if (urlstr.includes('women')){
+            $('#customimg').attr("src", "assets/img/005.png"); 
+        }else{
+            $('#customimg').attr("src", "assets/img/006.png");    
+        } 
         //id 버튼 보여주기
         $('#passbtn').css({
             "display":"block",
