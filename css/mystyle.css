@@ -62,4 +62,7 @@
     translate: (-30%,-50%);
     text-align: center;
   }
-  
+  .lb-wrap img {
+    width: 100%;
+    vertical-align: middle;
+  }
