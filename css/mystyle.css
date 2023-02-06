@@ -35,8 +35,14 @@
     height: 100%;
     background: pink;
   }
-  #customimg{
+  /* #customimg{
     align-items: center;
+  } */
+  #customimg{
+   width: 100%;
+   height: 800px; 
+   object-fit: fill;
+   /* display: block;  */
   }
   button.btn1 {
     position: absolute;
