@@ -38,12 +38,11 @@ $('#passbtn2').click(function(){
 $(function(){
 	$("#customimg").click(function(){
 		//사용하고자 하는 함수
-		fn_kakaoLogin('Kakao');
-		
+		imageClickEvent();
 	});
 });	
 
-function fn_kakaoLogin(type){
+function imageClickEvent(){
 	//alert("loginType : " + type);
     console.log('page::' + page);
     if (page == 1){
@@ -51,7 +50,19 @@ function fn_kakaoLogin(type){
         //첫번쨰 페이지 기능
         console.log('page::' + page);
         // id image 변경
-        $('#customimg').attr("src", "assets/img/버튼추가2.png");    
+        //if man
+        console.log('window.location.href::'+window.location.href);
+        var urlstr = window.location.href;
+        if (urlstr.includes('women')){
+            $('#customimg').attr("src", "assets/img/005.png"); 
+        }else{
+            $('#customimg').attr("src", "assets/img/006.png");    
+        }
+
+        
+        //if women
+       
+        $('.jb-text').css('display','none')
         
         //$('#passbtn1').prop('value',"GGG");
         
