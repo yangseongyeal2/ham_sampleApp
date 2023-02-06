@@ -1,7 +1,6 @@
 var page = 1;
 $('#passbtn').click(function(){
     console.log('passbtn Clicked');
-    
     if (page == 1){
         page = 2;
         //첫번쨰 페이지 기능
@@ -13,11 +12,12 @@ $('#passbtn').click(function(){
             "display":"block",
             "top": "75%"
         });
-        $('#passbtn2').css({
-            "display":"block",
-            "top": "85%"
-        });
+        // $('#passbtn2').css({
+        //     "display":"block",
+        //     "top": "85%"
+        // });
         $('#passbtn').html('결제해서 보기');
+        $('.jb-text').css('display','none');
         //$('#passbtn1').prop('value',"GGG");
         
     }else if(page == 2){

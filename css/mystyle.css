@@ -11,6 +11,10 @@
   border-radius: 20px;
   height: 7%;
   width: 70%;
+  position:absolute;
+  top:75%;
+  left:50%;
+  transform: translate(-50%,-50%)
 }
 .passbtn3{
     background-color: gray;
@@ -62,13 +66,14 @@
     margin-left: 70px;
     
     text-align: center; */
-
-    width: 100%;
+    width: 90%;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform:translate(-50%, -50%); 
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .lb-wrap img {
     width: 100%;
